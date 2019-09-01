@@ -2,6 +2,9 @@ def post_liked_by(names)
 
   case names.length
 
+  when 0
+    "no one likes this"
+
   when 1
     "#{names[0]} likes this"
 
