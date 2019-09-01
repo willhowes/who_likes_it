@@ -1,3 +1,3 @@
-def liked_by(names)
+def post_liked_by(names)
   "Peter likes this"
 end
