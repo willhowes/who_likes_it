@@ -1,7 +1,7 @@
 def post_liked_by(names)
   if names.length == 1
-    "Peter likes this"
+    "#{names[0]} likes this"
   else
-    "Jacob and Alex like this"
+    "#{names[0]} and #{names[1]} like this"
   end
 end
