@@ -19,4 +19,8 @@ describe '.post_liked_by' do
   it "confirms for four people liking post" do
     expect(post_liked_by(["Alex", "Jacob", "Mark", "Max"])).to eq("Alex, Jacob and 2 others like this")
   end
+
+  it 'confirms for more than four people liking post' do
+    expect(post_liked_by(["Alex", "Jacob", "Mark", "Max", "Will"])).to eq("Alex, Jacob and 3 others like this")
+  end
 end
